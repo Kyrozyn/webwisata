@@ -53,3 +53,5 @@ $route['default_controller'] = 'awal';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['in'] = 'in';
+$route['admin/user'] = 'user';
+$route['admin/user/delete/(:num)'] = 'user/delete/$1/n';

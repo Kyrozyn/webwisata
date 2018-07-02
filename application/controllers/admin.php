@@ -25,4 +25,5 @@ class admin extends CI_Controller
             $this->load->view('admin');
         }
     }
+
 }
