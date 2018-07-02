@@ -7,12 +7,12 @@ $name = $user->username;
 <div class="container">
     <table cellpadding=0 cellspacing=10>
         <tr>
-            <th><?php echo lang('index_fname_th');?></th>
-            <th><?php echo lang('index_lname_th');?></th>
-            <th><?php echo lang('index_email_th');?></th>
-            <th><?php echo lang('index_groups_th');?></th>
-            <th><?php echo lang('index_status_th');?></th>
-            <th colspan="2"><center><?php echo lang('index_action_th');?></center></th>
+            <th>Nama Awal</th>
+            <th>Nama Akhir</th>
+            <th>Email</th>
+            <th>Grup</th>
+            <th>Status</th>
+            <th colspan="2"><center>Aksi</center></th>
         </tr>
         <?php foreach ($users as $user):?>
             <tr>
@@ -30,4 +30,6 @@ $name = $user->username;
             </tr>
         <?php endforeach;?>
     </table>
+    <br>
+    <a href="user/group" class="waves-effect waves-light btn">Manajemen Grup</a>
 </div>

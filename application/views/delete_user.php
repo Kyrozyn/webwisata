@@ -1,11 +1,15 @@
 <?php
 include "kepala/head_mat.php";
-$user = $this->ion_auth->user()->row();
-$name = $user->username;
 ?>
 
 <div class="container">
-    <h4>Apakah anda yakin ingin mendelete <?php echo $a[0]->username;?>?</h4>
-    <a href=<?php echo $id?>/y id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Masuk</a>
-
+    <div class="row">
+        <div class="col s12"><h4>Apakah anda yakin ingin mendelete <?php echo $a[0]->username;?>?</h4></div>
+        <div class="col s12 s6 m6 13"> <form action="" method="post">
+                    <button type="submit" value="submit" class="btn waves-effect red">Ya</button>
+                    <input type="hidden" name="id" value=<?php echo $a[0]->id;?>/>
+                </form>
+        </div>
+        <div class="col s12 s6 m6 13"><a href=".." class="waves-effect waves-light btn">Tidak</a></div>
+    </div>
 </div>
